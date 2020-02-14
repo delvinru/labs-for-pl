@@ -14,9 +14,7 @@ int gcd(int n, char** argv)
 {
 	int num = get_gcd(atoi(argv[1]), atoi(argv[2]));
 	for(int i = 3; i < n; i++)
-	{
 		num = get_gcd(num, atoi(argv[i]));
-	}
 	return num;
 }
 
